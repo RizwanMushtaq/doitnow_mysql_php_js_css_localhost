@@ -1,0 +1,324 @@
+.kalenderViewer{
+    grid-column: 1/21;
+    grid-row: 4/20;
+    overflow: hidden;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    position: relative;
+}
+
+/*Todo Container*/
+.todo_ContainerOuter{
+    width: 22rem;
+    height: 22rem;
+    background: #c9fff0;
+}
+.todo_ContainerOuter .todo_ContainerInner{
+    margin: 1rem;
+    height: 20rem;
+    
+}
+.todo_ContainerOuter .todo_ButtonsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.todo_ContainerOuter .Heute_ListContainer{
+    width: 100%;
+    height: 100%;
+    height: 16rem;
+    overflow: hidden;
+    overflow-y: auto;
+   display: flex;
+   flex-direction: column;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.todo_ContainerOuter .Heute_ListContainer::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.todo_ContainerOuter .Heute_ListContainer {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+.todo_ContainerOuter .Woche_ListContainer{
+    width: 100%;
+    height: 100%;
+    height: 16rem;
+    overflow: hidden;
+    overflow-y: auto;
+    display: none;
+    flex-direction: column;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.todo_ContainerOuter .Woche_ListContainer::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.todo_ContainerOuter .Woche_ListContainer {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+.todo_ContainerOuter .todo_Div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.todo_ContainerOuter .todo_ButtonContainer{
+    display: flex;
+    background-color: #a5d425;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+}
+.todo_ContainerOuter .todo_ButtonContainer button{
+    display: flex;
+    background-color: #a5d425;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-right: 0.5rem;
+}
+
+.BottomLine{
+    background-color: #a5d425;
+    margin-top: 0.3rem;
+    width: 4rem;
+    border: 2px #a5d425 solid;
+    border-radius: 2px;
+    
+}
+.HeuteBottomLine{
+    display: block;
+}
+.WocheBottomLine{
+    display: none;
+}
+
+.todo_ContainerOuter .todo_ListContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20rem;
+}
+.todo_ContainerOuter .todo_ListWithoutOrdner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.todo_ContainerOuter .todo_ListItem{
+    width: 100%;
+    display: flex;
+}
+.todo_ContainerOuter .todo_checkboxDiv{
+    margin: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+}
+.todo_ContainerOuter .todo_checkboxDiv input{
+    width: 100%;
+    height: 100%;
+}
+.todo_ContainerOuter .todo_item{
+    margin: 0.5rem;
+    margin-left: 0;
+    width: 16rem;
+    word-wrap: break-word;
+}
+.todo_ContainerOuter .todo_deleteDiv{
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+}
+.todo_ContainerOuter .todo_deleteDiv img{
+    margin: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.todo_ContainerOuter .todo_ListWithOrdner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.todo_ContainerOuter .todo_FolderItem{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.todo_ContainerOuter .todo_FolderHeader{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+.todo_ContainerOuter .todo_FolderDiv{
+    margin: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+}
+.todo_ContainerOuter .todo_FolderDiv img{
+    width: 100%;
+    height: 100%;
+}
+.todo_ContainerOuter .todo_FolderName{
+    margin: 0.5rem;
+    margin-left: 0;
+}
+.todo_ContainerOuter .todo_ArrowDiv{
+    margin: 0.5rem;
+    margin-left: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.todo_ContainerOuter .todo_ArrowDiv img{
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+}
+
+.todo_ContainerOuter .todo_FolderContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/*Kalender Container*/
+.kalenderViewer .kalenderContainerOuter{
+    min-width: 20rem;
+    min-height: 20rem;
+    background: #c9fff0;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+.kalenderViewer .kalenderContainerOuter .kalenderContainerInner{
+    transform: rotate(-45deg);
+    min-width: 20rem;
+    min-height: 20rem;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kalenderContainerInner .kalender{
+    width: 14rem;
+    height: 14rem;
+    font-size: 12px;
+    font-weight: bold;
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kalenderContainerInner .kalender .monthHeaderDiv{
+    width: 100%;
+    height: 2rem;
+    margin-left: 2rem;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+}
+.kalenderContainerInner .kalender .weekdaysDiv{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+.kalenderContainerInner .kalender .weekdaysDiv div{
+      width: calc(14rem/7);
+      opacity: 0.5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.kalenderContainerInner .kalender .daysDiv{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-wrap: wrap;  
+}
+.kalenderContainerInner .kalender .daysDiv div{
+    width: calc(14rem/7);
+    height: calc(10rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.kalenderContainerInner .kalender .daysDiv div:hover:not(.today){
+    cursor: pointer;
+    border: 2px solid #777;
+}
+
+.prev-date, .next-date{
+    opacity: 0.5;
+}
+.today{
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+
+.kalenderContainerInner .prevLogoContainer{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+}
+.kalenderContainerInner .prevLogoContainer:hover{
+    background-color: #afe2d3;
+}
+.kalenderContainerInner .prevLogoContainer img{
+    width: 100%;
+    height: 100%;
+}
+.kalenderContainerInner .nextLogoContainer{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    transform: rotate(0deg);
+}
+.kalenderContainerInner .nextLogoContainer:hover{
+    background-color: #afe2d3;
+}
+.kalenderContainerInner .nextLogoContainer img{
+    width: 100%;
+    height: 100%;
+}

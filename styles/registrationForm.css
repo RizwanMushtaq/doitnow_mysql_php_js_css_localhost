@@ -1,0 +1,90 @@
+.loginPage .lowerHalf .lowerHalfDiv .registrationFormContainer{
+    height: 16rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: none;
+    flex-direction: column;
+}
+.loginPage .lowerHalf .lowerHalfDiv .registrationFormContainer .loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.loginPage .lowerHalf .lowerHalfDiv .registrationFormContainer .loginForm .formInputDiv{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.loginPage .lowerHalf .lowerHalfDiv .registrationFormContainer .loginForm .formInputDiv h4{
+    background-color: #a5d427;
+    width: fit-content;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+}
+
+
+
+.loginPage .lowerHalf .lowerHalfDiv .registrationFormContainer .loginForm .formInputDiv .inputContainer{
+    margin-top: 0.4rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 1.5rem;
+    font-size: 1.2rem;
+    border: 1px black solid;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.loginPage .lowerHalf .lowerHalfDiv .registrationFormContainer .loginForm .formInputDiv .inputContainer .logoContainer{
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    overflow: hidden;
+}
+.loginPage .lowerHalf .lowerHalfDiv .registrationFormContainer .loginForm .formInputDiv .inputContainer input{
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    padding-left: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+}
+.loginPage .lowerHalf .lowerHalfDiv .registrationFormContainer .loginForm .formInputDiv .inputContainer .logoContainer img{
+    width: 100%;
+    height: 100%;
+}
+.loginPage .lowerHalf .lowerHalfDiv .registrationFormContainer .loginForm .container{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginPage .lowerHalf .lowerHalfDiv .registrationFormContainer .loginForm .container .buttonContainer{
+    border-radius: 2rem;
+    width: 9rem;
+    height: 2rem;
+    background-color: #a5d427;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginPage .lowerHalf .lowerHalfDiv .registrationFormContainer .loginForm .container .buttonContainer button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.loginPage .lowerHalf .lowerHalfDiv .registrationFormContainer .loginForm .container .buttonContainer .logoContainer{
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    overflow: hidden;
+}
+.loginPage .lowerHalf .lowerHalfDiv .registrationFormContainer .loginForm .container .buttonContainer .logoContainer img{
+    width: 100%;
+    height: 100%;
+}
